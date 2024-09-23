@@ -1,0 +1,16 @@
+package org.sample.EntraSDET;
+
+import org.testng.annotations.Test;
+
+import business_logic.HomePage;
+
+public class WatchDemo extends BaseTest {
+	
+	HomePage homePage = new HomePage(driver);
+  @Test
+  public void testWatchDemo() {
+	  
+	  homePage.clickWatchDemo();
+	  
+  }
+}

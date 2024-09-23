@@ -1,0 +1,9 @@
+package org.sample.EntraSDET;
+
+import org.testng.annotations.Test;
+
+public class TestEntraLinkedInJoin {
+  @Test
+  public void f() {
+  }
+}

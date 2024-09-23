@@ -1,0 +1,62 @@
+package org.sample.EntraSDET;
+
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.sample.EntraSDET.browserfactory.BrowserDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+
+import business_logic.HomePage;
+import business_logic.WatchDemoPage;
+
+public class TestEntraLinkedInJoin {
+	
+  WebDriver driver = BrowserDriver.createInstance();
+	HomePage homePage = new HomePage(driver);
+	WatchDemoPage demoPage = new WatchDemoPage(driver);
+
+	@Test
+	public void testLinkedInSocialForEntra() {
+
+		Assert.assertEquals(driver.getTitle(), "Property Management Software | Entrata");
+		homePage.clickToJoinLinkedInNetwork();
+	}
+	
+	public void navigateTowindowAndAddDetails(String email, String password) {
+		String parenHandle=driver.getWindowHandle();
+		Set<String> set = driver.getWindowHandles();
+		Iterator<String> iter= set.iterator();
+
+		while(iter.hasNext())
+		{
+
+		String child_window=iter.next();
+
+		if(!parenHandle.equals(child_window))
+		{
+		driver.switchTo().window(child_window);
+
+		System.out.println(driver.switchTo().window(child_window).getTitle());
+		
+		driver.findElement(By.name("email-or-phone")).sendKeys(email);
+		driver.findElement(By.name("password")).sendKeys(password);
+
+		driver.close();
+		
+		driver.switchTo().window(parenHandle);
+		}
+		}
+	}
+
+	
+
+	 @AfterMethod 
+	 public void postCondition(){ 
+		 driver.quit(); 
+	 }
+
+}

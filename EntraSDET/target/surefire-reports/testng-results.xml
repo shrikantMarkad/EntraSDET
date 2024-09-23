@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-23T21:21:38 IST" name="Suite2" finished-at="2024-09-23T21:22:45 IST" duration-ms="67602">
+    <groups>
+    </groups>
+    <test started-at="2024-09-23T21:21:38 IST" name="all-tests" finished-at="2024-09-23T21:22:45 IST" duration-ms="67602">
+      <class name="org.sample.EntraSDET.TestWatchDemo">
+        <test-method signature="testWatchDemo()[pri:0, instance:org.sample.EntraSDET.TestWatchDemo@1bd0b0e5]" started-at="2024-09-23T21:22:17 IST" name="testWatchDemo" finished-at="2024-09-23T21:22:44 IST" duration-ms="27606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWatchDemo -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:org.sample.EntraSDET.TestWatchDemo@1bd0b0e5]" started-at="2024-09-23T21:22:44 IST" name="postCondition" finished-at="2024-09-23T21:22:45 IST" duration-ms="655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- org.sample.EntraSDET.TestWatchDemo -->
+      <class name="org.sample.EntraSDET.TestEntraLinkedInJoin">
+        <test-method signature="testLinkedInSocialForEntra()[pri:0, instance:org.sample.EntraSDET.TestEntraLinkedInJoin@40368a46]" started-at="2024-09-23T21:21:38 IST" name="testLinkedInSocialForEntra" finished-at="2024-09-23T21:22:16 IST" duration-ms="38022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLinkedInSocialForEntra -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:org.sample.EntraSDET.TestEntraLinkedInJoin@40368a46]" started-at="2024-09-23T21:22:16 IST" name="postCondition" finished-at="2024-09-23T21:22:17 IST" duration-ms="1197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- org.sample.EntraSDET.TestEntraLinkedInJoin -->
+    </test> <!-- all-tests -->
+  </suite> <!-- Suite2 -->
+</testng-results>

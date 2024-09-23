@@ -1,0 +1,28 @@
+package org.sample.EntraSDET;
+
+import org.openqa.selenium.WebDriver;
+import org.sample.EntraSDET.browserfactory.BrowserDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+
+import business_logic.HomePage;
+
+public class WatchDemo{
+	
+	WebDriver driver = BrowserDriver.createInstance();
+	HomePage homePage = new HomePage(driver);
+	
+  @Test
+  public void testWatchDemo() {
+	  
+	  Assert.assertEquals(driver.getTitle(), "Property Management Software | Entrata");
+	  homePage.clickWatchDemo();
+	  Assert.assertEquals(driver.getTitle(), "Entrata | Optimize Property Management with One Platform");
+	  
+  }
+  
+	/*
+	 * @AfterMethod public void postCondition(){ driver.quit(); }
+	 */
+}

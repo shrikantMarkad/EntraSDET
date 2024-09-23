@@ -1,0 +1,20 @@
+package business_logic;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class HomePage{
+	
+	WebDriver driver = null;
+	
+	public HomePage(WebDriver test_driver) {
+		driver = test_driver;
+	}
+	
+	String home_demo = "//div[@class='button-text'][normalize-space()='Watch Demo']";
+	
+	public void clickWatchDemo() {
+		driver.findElement(By.xpath(home_demo)).click();
+	}
+
+}

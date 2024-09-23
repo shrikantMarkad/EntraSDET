@@ -1,0 +1,38 @@
+package business_logic;
+
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
+
+public class HomePage{
+	
+	WebDriver driver = null;
+	
+	public HomePage(WebDriver test_driver) {
+		driver = test_driver;
+	}
+	
+	String home_demo = "//div[@class='button-text'][normalize-space()='Watch Demo']";
+	String linedin = "//div[@class='social-wrapper']/a[contains(@href, 'linkedin')]/img";
+	
+	public void clickWatchDemo() {
+		WebElement demo_button = driver.findElement(By.xpath(home_demo));
+		Actions action = new Actions(driver);
+		action.moveToElement(demo_button).click().build().perform();
+		//driver.findElement(By.xpath(home_demo)).click();
+	}
+	
+	public void clickToJoinLinkedInNetwork() {
+		
+		//driver.findElement(By.xpath(linedin)).click();
+		new Actions(driver).moveToElement(driver.findElement(By.xpath(linedin))).click().build().perform();
+	}
+	
+	
+
+}
