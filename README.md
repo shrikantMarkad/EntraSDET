@@ -1,4 +1,4 @@
-Make sure that you have java 17, maven 
+Make sure that you have java 17, maven, and allure
 
 Clone the repository git clone https://github.com/shrikantMarkad/EntraSDET.git
 
@@ -10,4 +10,14 @@ In the same directory open command prompt
 
 Add command as mvn verify
 
-Execution will trigger and you will find result under test-output(if project is in eclipse please refresh to see the updated result)
+Execution will trigger and you will find result under allure-results folder
+
+To open allure you have to be projects root folder where you see allure-results folder
+
+If you see expected folder(refresh dir if required) then open command prompt
+
+type "allure serve allure-results"(don't add double quotes while adding command) & press enter
+
+Report will be opened in any of the default browser
+
+Note: One tests is intentionally failed to be display in the allure report along with failure screenshot
