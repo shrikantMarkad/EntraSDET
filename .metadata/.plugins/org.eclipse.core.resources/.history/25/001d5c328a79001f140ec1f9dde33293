@@ -1,5 +1,0 @@
-# browser to use
-browser = chrome
-
-# initial URL
-url.base = http://www.eliasnogueira.com/

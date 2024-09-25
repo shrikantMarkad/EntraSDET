@@ -1,8 +1,0 @@
-package org.sample.EntraSDET.browserfactory;
-
-import org.openqa.selenium.WebDriver;
-
-public interface Factory {
-	WebDriver createDriver();
-
-}

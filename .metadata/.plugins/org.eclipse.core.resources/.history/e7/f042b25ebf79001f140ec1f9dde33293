@@ -1,8 +1,0 @@
-<suite  name="testSuite">
-<test name="MytestCase" group-by-instances="true">
-    <classes>
-        <class name="C:\Users\Shrikant.M\eclipse-workspace\EntraSDET\src\test\java\org\sample\EntraSDET\TestEntraLinkedInJoin.java" />
-        <class name="C:\Users\Shrikant.M\eclipse-workspace\EntraSDET\src\test\java\org\sample\EntraSDET\TestWatchDemo.java" />
-    </classes>
-</test>
-</suite>

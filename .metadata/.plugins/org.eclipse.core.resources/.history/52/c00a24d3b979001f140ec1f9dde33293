@@ -1,7 +1,0 @@
-<suite name="TestSuite" thread-count="1" parallel="false" preserve-order="true">
-    <classes>
-        <class name="tests.Init" />
-        <class name="tests.test1" />
-        <class name="tests.test2" />
-    </classes>
-</test>
