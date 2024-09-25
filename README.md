@@ -20,4 +20,4 @@ type "allure serve allure-results"(don't add double quotes while adding command)
 
 Report will be opened in any of the default browser
 
-Note: One tests is intentionally failed to be display in the allure report along with failure screenshot
+Note: try to fail one of the test intentionally so that you will see failure screenshot to the allure report(append any char to page tile and rerun with same steps)
