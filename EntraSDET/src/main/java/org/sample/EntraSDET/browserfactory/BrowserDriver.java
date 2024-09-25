@@ -18,6 +18,7 @@ import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
 import io.github.bonigarcia.wdm.managers.EdgeDriverManager;
 import io.github.bonigarcia.wdm.managers.FirefoxDriverManager;
 import io.github.bonigarcia.wdm.managers.SafariDriverManager;
+import utils.CaptureScreenshot;
 import utils.ConfigReader;
 
 public class BrowserDriver {
@@ -42,6 +43,7 @@ public class BrowserDriver {
 
         driver.get(config.getBaseUrl());       
         driver.manage().window().maximize();
+        new CaptureScreenshot().getDriverInstance(driver);
         new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.elementToBeClickable(driver.findElement(By.id("cookie-accept")))).click();
 		return driver;
     }

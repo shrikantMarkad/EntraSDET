@@ -36,7 +36,7 @@ public class HomePage{
 		
 		WebElement element = driver.findElement(By.xpath(linedin));
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
-		new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(linedin)))).click();
+		new WebDriverWait(driver, Duration.ofSeconds(30)).until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(linedin)))).click();
 	}
 	
 	public void verifyHomePageAndSignIn() {

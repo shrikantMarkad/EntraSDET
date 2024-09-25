@@ -4,12 +4,16 @@ import org.openqa.selenium.WebDriver;
 import org.sample.EntraSDET.browserfactory.BrowserDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import business_logic.HomePage;
 import business_logic.WatchDemoPage;
+import utils.AllureTestListner;
+import utils.CaptureScreenshot;
 
 
+@Listeners(AllureTestListner.class)
 public class TestWatchDemo {
 
 	WebDriver driver = BrowserDriver.createInstance();
